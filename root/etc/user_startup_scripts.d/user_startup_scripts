@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for f in /etc/user_startup_scripts.d/*.sh; do
+  "$f" 
+done

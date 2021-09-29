@@ -1,0 +1,10 @@
+[Unit]
+Description=starts up user placed scripts in /etc/user_startup_scripts.d/
+
+[Service]
+Type=oneshot
+ExecStart=/etc/user_startup_scripts.d/user_startup_scripts
+
+[Install]
+WantedBy=multi-user.target
+
